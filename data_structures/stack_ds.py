@@ -45,6 +45,7 @@ class Stack:
 
     @property
     def size(self) -> int:
+        """Returns the size of the stack"""
         return self._size
 
 
