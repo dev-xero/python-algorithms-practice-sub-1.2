@@ -15,6 +15,7 @@ from data_structures.linked_list_ds import Node
 
 class Queue:
     def __init__(self):
+        """Setup"""
         self._last = None
         self._first = None
         self._size = 0
