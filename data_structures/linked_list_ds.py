@@ -1,7 +1,7 @@
 # python implementation of a singly linked list
 
 """linked_list_ds.py
-   Linked List Data Structure Implemented in Python
+   Linked-List data structure implemented in Python
 """
 
 # ---------------------------------------------------------------------------------------------------------

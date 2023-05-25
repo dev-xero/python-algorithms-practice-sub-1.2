@@ -1,13 +1,14 @@
 # code based on java implementation
 
 """main.py
-   code containing functions to rotate an array by "k" steps
+   Code containing functions to rotate n array by "k" steps
 """
 
 # ---------------------------------------------------------------------------------------------------------
 
 
 def rotate_array_by_k(k: int, array: [str]) -> [str]:
+    """Rotate an array by "k" steps"""
     length = len(array)
     rotated_array = [""] * length
 
@@ -21,6 +22,7 @@ def rotate_array_by_k(k: int, array: [str]) -> [str]:
 
 
 def print_array(array: [str]) -> None:
+    """Function to print the contents of an array"""
     for item in array:
         print(f"{item}", end=" ")
 
