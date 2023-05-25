@@ -21,6 +21,7 @@ class Stack:
         self._size = 0
 
     def push(self, item: str) -> None:
+        """Push an item on top of the stack"""
         old_first = self._first
         first = Node()
 
@@ -31,6 +32,7 @@ class Stack:
         self._size += 1
 
     def pop(self) -> str:
+        """Pop an item on from the stack"""
         item = self._first
         self._first = self._first.next
         self._size -= 1
