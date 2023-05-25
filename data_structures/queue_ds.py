@@ -14,9 +14,10 @@ from data_structures.linked_list_ds import Node
 
 
 class Queue:
-    _last: Node | None = None
-    _first: Node | None = None
-    _size: int
+    def __init__(self):
+        self._last = None
+        self._first = None
+        self._size = 0
 
     def is_empty(self) -> bool:
         """Returns true if the queue is empty"""
@@ -29,22 +30,24 @@ class Queue:
 
     def enqueue(self, item: str) -> None:
         """Enqueues an item"""
-        old_last = self._last
-        last = Node()
-
-        last.item = item
-        last.next = None
+        new_last = Node()
+        new_last.item = item
+        new_last.next = None
 
         if self.is_empty():
-            self._first = last
+            self._first = new_last
 
         else:
-            old_last.next = last
+            self._last.next = new_last
 
+        self._last = new_last
         self._size += 1
 
     def dequeue(self) -> str:
         """Dequeues an item"""
+        if self.is_empty():
+            raise IndexError("Cannot dequeue from an empty queue")
+
         old_first = self._first.item
         self._first = self._first.next
 
@@ -59,7 +62,15 @@ class Queue:
 
 
 def main():
-    print()
+    test_queue: Queue = Queue()
+
+    test_queue.enqueue("This")
+    test_queue.enqueue("is")
+    test_queue.enqueue("a")
+    test_queue.enqueue("queue")
+
+    print(test_queue.dequeue())
+    print(test_queue.size)
 
 
 # ---------------------------------------------------------------------------------------------------------
