@@ -6,6 +6,6 @@
 2. Push Down Stacks
 3. Queues
 
-## Algorithsm Implemented
+## Algorithms Implemented
 1. rotate_array_by_k()
 2. dijkstra_eval()
