@@ -40,7 +40,8 @@ class Stack:
         return item.item
 
     def is_empty(self) -> bool:
-        return self._size == 0
+        """Returns true if first is None"""
+        return self._first is None
 
     @property
     def size(self) -> int:
