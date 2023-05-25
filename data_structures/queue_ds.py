@@ -19,14 +19,16 @@ class Queue:
     _size: int
 
     def is_empty(self) -> bool:
+        """Returns true if the queue is empty"""
         return self._first is None
 
     @property
     def size(self) -> int:
+        """Returns the size of the queue"""
         return self._size
 
     def enqueue(self, item: str) -> None:
-        """Enqueue an item"""
+        """Enqueues an item"""
         old_last = self._last
         last = Node()
 
@@ -38,6 +40,19 @@ class Queue:
 
         else:
             old_last.next = last
+
+        self._size += 1
+
+    def dequeue(self) -> str:
+        """Dequeues an item"""
+        old_first = self._first.item
+        self._first = self._first.next
+
+        if self.is_empty():
+            self._last = None
+
+        self._size -= 1
+        return old_first
 
 
 # ---------------------------------------------------------------------------------------------------------
