@@ -14,7 +14,7 @@ from data_structures.linked_list_ds import Node
 
 
 class Stack:
-    """Stack Data Structure Implementation Using Linked Lists"""
+    """Stack data structure implementation using linked-lists"""
     def __init__(self):
         """Setup"""
         self._first = None

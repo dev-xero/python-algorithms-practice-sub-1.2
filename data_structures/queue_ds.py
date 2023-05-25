@@ -14,6 +14,7 @@ from data_structures.linked_list_ds import Node
 
 
 class Queue:
+    """Queue data structure implemented using linked-lists"""
     def __init__(self):
         """Setup"""
         self._last = None
@@ -73,6 +74,8 @@ def main():
     print(test_queue.dequeue())
     print(test_queue.size)
 
+    print(test_queue.dequeue())
+    print(test_queue.size)
 
 # ---------------------------------------------------------------------------------------------------------
 
