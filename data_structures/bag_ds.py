@@ -14,13 +14,17 @@ from data_structures.linked_list_ds import Node
 
 
 class Bag:
-    """Implementation of a bag data structure using linked-lists"""
+    """
+       Implementation of a bag data structure using linked-lists.
+       This implementation is based on the LIFO order
+    """
     def __init__(self):
         """Setup"""
         self._first: Node | None = None
         self._size: int = 0
 
     def add(self, item: str) -> None:
+        """Add an item into the bag"""
         old_first = self._first
         first = Node()
 
