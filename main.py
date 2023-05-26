@@ -32,6 +32,7 @@ def print_array(array: [str]) -> None:
 
 
 def main():
+    """Testing"""
     test_string_array: [str] = ["A", "W", "A", "R", "D"]
     print_array(test_string_array)
 
