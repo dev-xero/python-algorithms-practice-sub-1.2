@@ -8,7 +8,7 @@
 
 
 class Node:
-    item: str | None = None
+    item: str = None
     next = None
 
 
