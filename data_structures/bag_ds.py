@@ -44,7 +44,16 @@ class Bag:
 
 def main():
     """Testing"""
-    print()
+    test_bag = Bag()
+
+    print(test_bag.is_empty())
+
+    test_bag.add("this")
+    test_bag.add("is")
+    test_bag.add("a")
+    test_bag.add("bag")
+
+    print(test_bag.size)
 
 
 # ---------------------------------------------------------------------------------------------------------
