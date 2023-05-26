@@ -1,5 +1,5 @@
 # Python Algorithms Practice sub-1.2
-🐍 Algorithms and data structures implemented while studying sub-chapter 1.2 written in Python
+🐍 Algorithms and data structures implemented while studying sub-chapter 1.2 and 1.3 written in Python
 
 ## Data Structures Implemented
 1. Linked Lists (singly)
