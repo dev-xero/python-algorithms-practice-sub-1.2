@@ -1,4 +1,4 @@
-# code based on dijkstra's evaluation algorithm utilizing two stacks
+# github repository: https://github.com/dev-xero/python-algorithms-practice-sub-1.2
 
 """dijkstra_eval.pu
     Python code to evaluate a valid mathematical expression formatted as a string

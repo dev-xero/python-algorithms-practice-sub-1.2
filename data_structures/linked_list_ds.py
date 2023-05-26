@@ -1,4 +1,4 @@
-# python implementation of a singly linked list
+# github repository: https://github.com/dev-xero/python-algorithms-practice-sub-1.2
 
 """linked_list_ds.py
    Linked-List data structure implemented in Python

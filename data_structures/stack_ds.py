@@ -1,4 +1,4 @@
-# code based on java implementation
+# github repository: https://github.com/dev-xero/python-algorithms-practice-sub-1.2
 
 """stack_ds.py
    Python implementation of a stack data structure
