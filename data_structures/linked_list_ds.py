@@ -8,8 +8,9 @@
 
 
 class Node:
-    item: str = None
-    next = None
+    def __init__(self):
+        self.item: str | None = None
+        self.next = None
 
 
 # ---------------------------------------------------------------------------------------------------------
@@ -28,7 +29,7 @@ def main():
     first.next = second
     second.next = third
 
-    print(first.next.next.next)
+    print(first.next.next.item)
 
 
 # ---------------------------------------------------------------------------------------------------------
