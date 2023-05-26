@@ -5,6 +5,7 @@
 1. Linked Lists (singly)
 2. Push Down Stacks
 3. Queues
+4. Bags
 
 ## Algorithms Implemented
 1. rotate_array_by_k()
