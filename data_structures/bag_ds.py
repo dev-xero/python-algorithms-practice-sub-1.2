@@ -28,6 +28,7 @@ class Bag:
         first.next = old_first
 
         self._first = first
+        self._size += 1
 
     def is_empty(self) -> bool:
         """Returns true if the first node is None"""
