@@ -13,6 +13,7 @@ from data_structures.stack_ds import Stack
 
 
 def dijkstra_eval(expression: str) -> str:
+    """Evaluate a valid expression using dijkstra's evaluation algorithm"""
     operations: Stack = Stack()
     operands: Stack = Stack()
 
