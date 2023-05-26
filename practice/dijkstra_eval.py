@@ -66,7 +66,7 @@ def dijkstra_eval(expression: str) -> str:
 
 def main():
     """Testing"""
-    test_expression = "( ( 2 * 10 ) + ( 11 - 1 ) )"  # need's to be fully parenthesized
+    test_expression = "( ( 2 * 10 ) + ( 11 - 1 ) )"  # needs to be fully parenthesized
     print(dijkstra_eval(test_expression))
 
 
